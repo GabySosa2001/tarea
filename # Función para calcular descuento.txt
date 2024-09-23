@@ -1,0 +1,54 @@
+# Función para calcular descuento
+def calcular_descuento(monto_total, porcentaje_descuento=10):
+    """
+    Calcula el descuento para un monto total y porcentaje de descuento dado.
+    
+    Args:
+        monto_total (float): Monto total de la compra.
+        porcentaje_descuento (int, opcional): Porcentaje de descuento. Defaults a 10.
+    
+    Returns:
+        float: Monto del descuento.
+    """
+    descuento = monto_total * (porcentaje_descuento / 100)
+    return descuento
+
+
+# Ejemplo de uso
+monto_compra_1 = 200  # Monto total de la compra 1
+descuento_1 = calcular_descuento(monto_compra_1)
+monto_final_1 = monto_compra_1 - descuento_1
+
+monto_compra_2 = 300  # Monto total de la compra 2
+porcentaje_descuento_2 = 15  # Porcentaje de descuento para la compra 2
+descuento_2 = calcular_descuento(monto_compra_2, porcentaje_descuento_2)
+monto_final_2 = monto_compra_2 - descuento_2
+
+
+# Imprimir resultados
+print("Llamada 1:")
+print(f"Monto del descuento: ${descuento_1:.2f}")
+print(f"Monto final a pagar después del descuento: ${monto_final_1:.2f}")
+print("\nLlamada 2:")
+print(f"Monto del descuento: ${descuento_2:.2f}")
+print(f"Monto final a pagar después del descuento: ${monto_final_2:.2f}")
+
+
+El código funciona de la siguiente manera:
+
+
+1. Define la función calcular_descuento.
+2. Calcula el descuento para dos compras diferentes.
+3. Imprime los resultados.
+
+La salida será:
+
+
+
+Llamada 1:
+Monto del descuento: $20.00
+Monto final a pagar después del descuento: $180.00
+
+Llamada 2:
+Monto del descuento: $45.00
+Monto final a pagar después del descuento: $255.00
